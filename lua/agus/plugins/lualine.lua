@@ -7,8 +7,8 @@ return {
         local custom_horizon = require "lualine.themes.horizon"
 
         -- Normal Mode
-        custom_horizon.normal.a.bg = '#ff5f1f'
-        custom_horizon.normal.a.fg = '#ffffff'
+        custom_horizon.normal.a.bg = '#dbfb0c'
+        custom_horizon.normal.a.fg = '#181922'
 
         custom_horizon.normal.b.fg = '#ffffff'
 
@@ -16,8 +16,8 @@ return {
         custom_horizon.normal.c.fg = '#ffffff'
 
         -- Insert Mode
-        custom_horizon.insert.a.bg = '#1ad61a'
-        custom_horizon.insert.a.fg = '#ffffff'
+        custom_horizon.insert.a.bg = '#02daf9'
+        custom_horizon.insert.a.fg = '#181922'
 
         custom_horizon.insert.b.fg = '#ffffff'
 
@@ -26,7 +26,7 @@ return {
 
         -- Visual Mode
         custom_horizon.visual.a.bg = '#ad0afd'
-        custom_horizon.visual.a.fg = '#ffffff'
+        custom_horizon.visual.a.fg = '#181922'
 
         custom_horizon.visual.b.fg = '#ffffff'
 
@@ -44,7 +44,7 @@ return {
 
         -- Replace mode
         custom_horizon.replace.a.bg = '#ff0000'
-        custom_horizon.replace.a.fg = '#ffffff'
+        custom_horizon.replace.a.fg = '#181922'
 
         custom_horizon.replace.b.fg = '#ffffff'
 
