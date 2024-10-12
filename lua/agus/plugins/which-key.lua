@@ -9,6 +9,7 @@ return {
             { "<leader>e", group = "Explorer" },
             { "<leader>m", group = "Misc" },
             { "<leader>l", group = "LSP" },
+            { "<leader>ls", group = "Show" },
             { "<leader>g", group = "Git" },
             { "<leader>t", group = "Tabs" },
             { "<leader>s", group = "Splits" },
