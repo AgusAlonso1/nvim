@@ -78,6 +78,8 @@ return {
                     capabilities = capabilities,
                 })
             end,
+            ["tsserver"] = function()
+            end,
         })
 
         
