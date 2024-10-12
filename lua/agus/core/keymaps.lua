@@ -15,10 +15,8 @@ keymap.set("n", "<leader>q", ":q!<CR>", { desc = "Quit" })
 -- Clear search highlights
 keymap.set("n", "<leader>mh", ":nohl<CR>", { desc = "Clear search highlights" })
 
--- Better deletes 
-keymap.set({"n", "v"}, "x", '"_x')
-keymap.set({"n", "v"}, "d", '"_d')
-keymap.set({"n", "v"}, "<Del>", '"_x')
+-- Better delete single character
+keymap.set("n", "x", '"_x')
 
 -- Better increment and decrement
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" })
