@@ -24,6 +24,7 @@ return {
                 "json",
                 "prisma",
                 "ruby",
+                "go",
                 "rust",
                 "sql",
                 "typescript",
