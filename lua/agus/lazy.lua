@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     { import = "agus.plugins"},
     { import = "agus.plugins.lsp" },
-    { import = "agus.plugins.themes.gruvbox" }
+    { import = "agus.plugins.themes.tokyo-night" }
 })
 
 vim.keymap.set("n", "<leader>z", "<cmd>Lazy<CR>", { desc = "Lazy Interface" })

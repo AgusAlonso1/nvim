@@ -5,9 +5,37 @@ return {
     config = function ()
         vim.cmd[[colorscheme gruvbox]]
 
+        local gruvbox_custom_theme = {
+            normal = {
+                a = { fg = '#3c3836', bg = '#458588', gui = 'bold' },
+                b = { fg = '#ebdbb2', bg = '#504945' },
+                c = { fg = '#ebdbb2', bg = '#3c3836' },
+            },
+            insert = {
+                a = { fg = '#3c3836', bg = '#8ec07c', gui = 'bold' },
+                b = { fg = '#ebdbb2', bg = '#504945' },
+                c = { fg = '#ebdbb2', bg = '#3c3836' },
+            },
+            visual = {
+                a = { fg = '#3c3836', bg = '#de8629', gui = 'bold' },
+                b = { fg = '#ebdbb2', bg = '#504945' },
+                c = { fg = '#ebdbb2', bg = '#3c3836' },
+            },
+            command = {
+                a = { fg = '#3c3836', bg = '#4bc073 ', gui = 'bold' },
+                b = { fg = '#ebdbb2', bg = '#504945' },
+                c = { fg = '#ebdbb2', bg = '#3c3836' },
+            },
+            replace = {
+                a = { fg = '#3c3836', bg = '#cc241d', gui = 'bold' },
+                b = { fg = '#ebdbb2', bg = '#504945' },
+                c = { fg = '#ebdbb2', bg = '#3c3836' },
+            },
+        }
+
         local custom_config = {
                     options = {
-                        theme = "auto";
+                        theme = gruvbox_custom_theme;
                         section_separators = { left = '', right = ''},
                         component_separators = { left = '|', right = '|'},
                     },
