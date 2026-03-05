@@ -38,3 +38,9 @@ opt.splitbelow = true
 
 -- Dash in words
 opt.iskeyword:append("-")
+
+-- Folding
+opt.foldcolumn = "1"
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldenable = true
