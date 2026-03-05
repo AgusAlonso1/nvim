@@ -2,8 +2,8 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-        config = function()
-          require("nvim-treesitter.configs").setup({
+        event = { "BufEnter" },
+        opts = {
             ensure_installed = {
               "bash",
               "css",
@@ -66,8 +66,7 @@ return {
                     },
                 },
             },
-          })
-        end,
+        },
     },
     {
         "nvim-treesitter/nvim-treesitter-textobjects",
