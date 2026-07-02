@@ -4,6 +4,14 @@ local keymap = vim.keymap
 
 -- General keymaps
 
+-- Theme switching
+keymap.set("n", "<leader>ut", function()
+    require("agus.theme").set_theme("tokyonight")
+end, { desc = "Tokyo Night theme" })
+keymap.set("n", "<leader>ug", function()
+    require("agus.theme").set_theme("gruvbox")
+end, { desc = "Gruvbox theme" })
+
 -- Switch line numbers mode
 vim.keymap.set("n", "<leader>mn", "<cmd>ToggleLineNumbersMode<CR>", { desc = "Toggle line numbers mode" })
 

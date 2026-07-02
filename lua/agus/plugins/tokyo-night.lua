@@ -4,6 +4,6 @@ return {
     priority = 1000,
     opts = {},
     config = function()
-        vim.cmd [[colorscheme tokyonight-storm]]
-    end
+        require("agus.theme").set_theme("tokyonight")
+    end,
 }
