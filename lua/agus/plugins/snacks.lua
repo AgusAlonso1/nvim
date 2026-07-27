@@ -27,6 +27,7 @@ return {
         	vim.api.nvim_create_autocmd("User", {
 				pattern = "VeryLazy",
 				callback = function()
+					local filtered_message = {}
 					local notify = Snacks.notifier.notify
 					---@diagnostic disable-next-line: duplicate-set-field
 					Snacks.notifier.notify = function(message, level, opts)
