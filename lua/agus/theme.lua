@@ -51,7 +51,7 @@ local function lualine_theme_for(name)
 end
 
 function M.refresh_lualine()
-    local theme_name = vim.g.agus_theme or "tokyonight"
+    local theme_name = vim.g.agus_theme or "gruvbox"
     local lualine_theme = lualine_theme_for(theme_name)
     if not lualine_theme then
         return
