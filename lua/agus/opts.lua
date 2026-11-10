@@ -1,0 +1,55 @@
+local opt = vim.opt
+
+-- Line numbers & relative numbers
+opt.number = true
+opt.relativenumber = true
+
+vim.api.nvim_create_user_command("ToggleLineNumbersMode", function()
+    opt.relativenumber = not opt.relativenumber
+end, { nargs = 0 })
+
+-- Tabs indentation
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
+opt.autoindent = true
+
+-- Line wrapping
+opt.wrap = false
+
+-- Search settings
+opt.ignorecase = true
+opt.smartcase = true
+
+-- Appearence
+opt.termguicolors = true
+opt.background = "dark"
+opt.signcolumn = "yes"
+
+-- Backspace
+opt.backspace = "indent,eol,start"
+
+-- Clipboard
+opt.clipboard:append("unnamedplus")
+
+-- Split Windows
+opt.splitright = true
+opt.splitbelow = true
+
+-- Dash in words
+opt.iskeyword:append("-")
+
+-- Folding
+opt.foldcolumn = "1"
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldenable = true
+
+-- Diagnostics
+vim.diagnostic.config({
+    virtual_text = false,
+    signs = true,
+    underline = true,
+    update_in_insert = true,
+    severity_sort = true,
+})
